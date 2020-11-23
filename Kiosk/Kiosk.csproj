@@ -136,6 +136,12 @@
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="model\Market.cs" />
+    <Compile Include="model\Stats\AllProfitsData.cs" />
+    <Compile Include="model\Stats\DayProfits.cs" />
+    <Compile Include="model\Stats\HourProfits.cs" />
+    <Compile Include="model\Stats\MenuCategoryData.cs" />
+    <Compile Include="model\Stats\SeatData.cs" />
+    <Compile Include="model\Stats\UserData.cs" />
     <Compile Include="model\User.cs" />
     <Compile Include="place\TableViewModel.cs" />
     <Compile Include="model\Category.cs" />
@@ -158,6 +164,7 @@
     <Compile Include="place\TablePage.xaml.cs">
       <DependentUpon>TablePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="remote\StatsDataRemote.cs" />
     <Compile Include="repositoryImpl\AuthRepositoryImpl.cs" />
     <Compile Include="repositoryImpl\FoodRepositoryImpl.cs" />
     <Compile Include="repositoryImpl\OrderRepositoryImpl.cs" />
