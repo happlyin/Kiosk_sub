@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\박진\Documents\GitHub\C-_Project\Kiosk\Kiosk\obj\Debug\
+C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\
 Kiosk
 none
 false
 DEBUG;TRACE
-C:\Users\박진\Documents\GitHub\C-_Project\Kiosk\Kiosk\App.xaml
+C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\App.xaml
 14-1784259681
 11174109075
-39-2019748348
-1431913985917
+46-1600816619
+1432017397431
 admin\AdminPage.xaml;admin\MessagePage.xaml;admin\SalePage.xaml;admin\StatsPage.xaml;intro\IntroPage.xaml;auth\LoginWindow.xaml;MainWindow.xaml;order\OrderPage.xaml;pay\CardPage.xaml;pay\CashPage.xaml;pay\CompletePage.xaml;pay\PayPage.xaml;place\PlacePage.xaml;place\TablePage.xaml;
 
 False
