@@ -1,0 +1,192 @@
+﻿<Page x:Class="Kiosk.admin.SalePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Kiosk.admin"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SalePage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Column="0" Grid.Row="0">
+            <StackPanel
+                Orientation="Vertical"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center">
+
+                <ListBox 
+                    x:Name="xCategory"
+                    SelectionChanged="xCategory_SelectionChanged"
+                    FontSize="15">
+
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel 
+                                IsItemsHost="True"              
+                                Orientation="Horizontal" />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListBoxItem}">
+
+                            <Setter 
+                                Property="HorizontalAlignment"
+                                Value="Center"/>
+
+                            <Setter 
+                                Property="Background"
+                                Value="Transparent"/>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+
+                    <ListBoxItem Margin="10">햄버거</ListBoxItem>
+                    <ListBoxItem Margin="10">드링크</ListBoxItem>
+                    <ListBoxItem Margin="10">사이드 메뉴</ListBoxItem>
+                </ListBox>
+            </StackPanel>
+
+            <StackPanel
+                Orientation="Vertical"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+
+                <Grid>
+
+                    <ListBox x:Name="xMenus"
+                         Margin="0,50,0,0"
+                         FontSize="16"
+                         SelectionChanged="listBox_SelectionChanged"
+                         HorizontalAlignment="Center"
+                         BorderBrush="Transparent"
+                         ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                         ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                             ItemsSource="{Binding foodList}">
+
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <UniformGrid 
+                                    Columns="3"
+                                    Rows="3"/>
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel 
+                                    Width="200" 
+                                    Height="200"
+                                    Margin="10,0,0,0">
+
+                                    <Image Source="{Binding imagePath}"/>
+                                    <TextBlock Text="{Binding name}"/>
+                                    <TextBlock>
+                                        <Run Text="가격:"/>
+                                        <Run Text="{Binding originalPrice}"/>
+                                    </TextBlock>
+                                    <TextBlock>
+                                        <Run Text="할인된 가격:"/>
+                                        <Run Text="{Binding price}"/>
+                                    </TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+            </StackPanel>
+        </Grid>
+
+        <Grid 
+            Grid.Column="0" 
+            Grid.Row="1">
+            <StackPanel
+                Orientation="Horizontal"
+                HorizontalAlignment="Center">
+
+                <Button
+                    Content="이전"
+                    VerticalAlignment="Center"
+                    Foreground="White"
+                    Margin="10"
+                    Background="Red"
+                    Width="100"
+                    Height="40" Click="Cancel_Button_Click"/>
+
+                <Button
+                    Content="다음"
+                    VerticalAlignment="Center"
+                    Foreground="White"
+                    Margin="10"
+                    Background="Red"
+                    Width="100"
+                    Height="40" Click="Next_Button_Click" />
+            </StackPanel>
+        </Grid>
+
+        <Grid 
+            Grid.Column="1" 
+            Grid.Row="0">
+
+            <StackPanel
+                Orientation="Vertical"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+                <StackPanel 
+                    Width="200" 
+                    Height="200"
+                    Margin="10,0,0,0">
+
+                    <Image Source="{Binding imagePath}"/>
+                    <TextBlock Text="{Binding name}"/>
+                </StackPanel>
+
+                <StackPanel>
+                    <TextBlock
+                        Text="할인 금액을 입력해주세요"/>
+                    <TextBox
+                        x:Name="SaleInput"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <Grid 
+            Grid.Column="1" 
+            Grid.Row="1">
+
+            <StackPanel 
+                Orientation="Horizontal"
+                HorizontalAlignment="Center">
+
+                <Button
+                    Content="할인 취소"
+                    VerticalAlignment="Center"
+                    Foreground="White"
+                    Margin="10"
+                    Background="#008299"
+                    Width="100"
+                    Height="40"/>
+
+                <Button
+                    Content="할인 적용"
+                    VerticalAlignment="Center"
+                    Foreground="White"
+                    Margin="10"
+                    Background="#008299"
+                    Width="100"
+                    Height="40" Click="Sale_Button_Click"/>
+            </StackPanel>
+        </Grid>
+        
+    </Grid>
+</Page>
