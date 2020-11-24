@@ -24,5 +24,10 @@ namespace Kiosk.admin
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+           // FrameLayout1.NavigationService.Navigate(new Page1());
+        }
     }
 }

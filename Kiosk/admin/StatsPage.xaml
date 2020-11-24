@@ -10,28 +10,65 @@
       Title="StatsPage">
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
-        </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Column="1" Grid.Row="1">
-            <TextBlock
-                Text="카테고리별 통계"/>
-            <lvc:PieChart LegendLocation="Right" Hoverable="False">
-                <lvc:PieChart.Series>
-                    <lvc:PieSeries Title="햄버거" Values="3" DataLabels="True"/>
-                    <lvc:PieSeries Title="음료수" Values="4" DataLabels="True"/>
-                    <lvc:PieSeries Title="사이드" Values="6" DataLabels="True"/>
-                </lvc:PieChart.Series>
-            </lvc:PieChart>
+        <Grid Grid.Row="0">
+            <StackPanel
+                    Orientation="Vertical"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Center">
+
+                <ListBox 
+                        FontSize="15">
+
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel 
+                                    IsItemsHost="True"              
+                                    Orientation="Horizontal" />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+
+
+                    <ListBoxItem Margin="10">총액</ListBoxItem>
+                    <ListBoxItem Margin="10">메뉴</ListBoxItem>
+                    <ListBoxItem Margin="10">카테고리</ListBoxItem>
+                    <ListBoxItem Margin="10">테이블</ListBoxItem>
+                    <ListBoxItem Margin="10">일별</ListBoxItem>
+                    <ListBoxItem Margin="10">유저</ListBoxItem>
+                </ListBox>
+
+                <Button Click="Button_Click"></Button>
+            
+            </StackPanel>
         </Grid>
 
-            
+        <Grid Grid.Row="1">
+            <Frame
+                x:Name="FrameLayout1"
+                NavigationUIVisibility="Hidden"
+                Source="data/CategoryDataPage.xaml"/>
+        </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </Grid>
 </Page>

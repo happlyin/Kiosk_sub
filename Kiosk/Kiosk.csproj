@@ -135,6 +135,21 @@
     <Compile Include="auth\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="data\CategoryDataPage.xaml.cs">
+      <DependentUpon>CategoryDataPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="data\MenusData.xaml.cs">
+      <DependentUpon>MenusData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="data\Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="data\SeatDataPage.xaml.cs">
+      <DependentUpon>SeatDataPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="data\StatsDataPage.xaml.cs">
+      <DependentUpon>StatsDataPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="model\Market.cs" />
     <Compile Include="model\Stats\AllProfitsData.cs" />
     <Compile Include="model\Stats\DayProfits.cs" />
@@ -188,6 +203,26 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="admin\StatsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="data\CategoryDataPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="data\MenusData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="data\Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="data\SeatDataPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="data\StatsDataPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

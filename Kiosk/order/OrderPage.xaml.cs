@@ -87,7 +87,7 @@ namespace Kiosk.order
         }
 
         private void Cancel_Button_Click(object sender, RoutedEventArgs e)
-        {
+        { 
             if (viewModel.currentPage == 2)
             {
                 this.DirectionControl(2);

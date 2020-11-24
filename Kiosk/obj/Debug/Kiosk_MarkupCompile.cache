@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\
 Kiosk
 none
 false
 DEBUG;TRACE
-C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\App.xaml
-14-1784259681
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\App.xaml
+19-1205368372
 11174109075
-45-758457252
-1432017397431
-admin\AdminPage.xaml;admin\MessagePage.xaml;admin\SalePage.xaml;admin\StatsPage.xaml;intro\IntroPage.xaml;auth\LoginWindow.xaml;MainWindow.xaml;order\OrderPage.xaml;pay\CardPage.xaml;pay\CashPage.xaml;pay\CompletePage.xaml;pay\PayPage.xaml;place\PlacePage.xaml;place\TablePage.xaml;
+501585715904
+1431402977719
+admin\AdminPage.xaml;admin\MessagePage.xaml;admin\SalePage.xaml;admin\StatsPage.xaml;data\CategoryDataPage.xaml;data\MenusData.xaml;data\Page1.xaml;data\SeatDataPage.xaml;data\StatsDataPage.xaml;intro\IntroPage.xaml;auth\LoginWindow.xaml;MainWindow.xaml;order\OrderPage.xaml;pay\CardPage.xaml;pay\CashPage.xaml;pay\CompletePage.xaml;pay\PayPage.xaml;place\PlacePage.xaml;place\TablePage.xaml;
 
 False
 
