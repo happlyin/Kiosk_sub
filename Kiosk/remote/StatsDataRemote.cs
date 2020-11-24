@@ -195,5 +195,13 @@ namespace Kiosk.remote
             return newAllPorfitsData;
         }
 
+        public DateTime GetKioskRunTime()
+        {
+            DateTime runTime = new DateTime();
+            MySqlDataReader reader = connection.GetDBData("select idxMarket, totalTime from market where idxMarket = " + 1);
+            if (reader.Read())
+                runTime = DateTime.Parse(reader["totalTime"].ToString());
+            return runTime;
+        }
     }
 }
