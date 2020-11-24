@@ -9,6 +9,6 @@
       Title="SeatDataPage">
 
     <Grid>
-        
+        <TextBlock Text="5"/>
     </Grid>
 </Page>

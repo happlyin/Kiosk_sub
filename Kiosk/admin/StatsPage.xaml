@@ -12,8 +12,8 @@
     <Grid>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="9*"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0">
@@ -22,28 +22,48 @@
                     VerticalAlignment="Top"
                     HorizontalAlignment="Center">
 
-                <ListBox 
-                        FontSize="15">
+                <StackPanel 
+                    Orientation="Horizontal"
+                    Background="White">
 
-                    <ListBox.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <VirtualizingStackPanel 
-                                    IsItemsHost="True"              
-                                    Orientation="Horizontal" />
-                        </ItemsPanelTemplate>
-                    </ListBox.ItemsPanel>
+                    <Button 
+                        Margin="10"
+                        FontSize="15"
+                        Background="White"
+                        BorderBrush="Transparent"
+                        Click="Button_Click_1">총액</Button>
+                    <Button 
+                        Margin="10"
+                        FontSize="15" 
+                        Background="White"
+                        BorderBrush="Transparent"
+                        Click="Button_Click_2">메뉴</Button>
+                    <Button 
+                        Margin="10" 
+                        FontSize="15" 
+                        Background="White"
+                        BorderBrush="Transparent"
+                        Click="Button_Click_3">카테고리</Button>
+                    <Button
+                        Margin="10" 
+                        FontSize="15"
+                        Background="White" 
+                        BorderBrush="Transparent"
+                        Click="Button_Click_4">테이블</Button>
+                    <Button 
+                        Margin="10" 
+                        FontSize="15"
+                        Background="White"
+                        BorderBrush="Transparent"
+                        Click="Button_Click_5">일별</Button>
+                    <Button 
+                        Margin="10" 
+                        FontSize="15" 
+                        Background="White" 
+                        BorderBrush="Transparent"
+                        Click="Button_Click_6">유저</Button>
+                </StackPanel>
 
-
-                    <ListBoxItem Margin="10">총액</ListBoxItem>
-                    <ListBoxItem Margin="10">메뉴</ListBoxItem>
-                    <ListBoxItem Margin="10">카테고리</ListBoxItem>
-                    <ListBoxItem Margin="10">테이블</ListBoxItem>
-                    <ListBoxItem Margin="10">일별</ListBoxItem>
-                    <ListBoxItem Margin="10">유저</ListBoxItem>
-                </ListBox>
-
-                <Button Click="Button_Click"></Button>
-            
             </StackPanel>
         </Grid>
 
@@ -51,7 +71,7 @@
             <Frame
                 x:Name="FrameLayout1"
                 NavigationUIVisibility="Hidden"
-                Source="data/CategoryDataPage.xaml"/>
+                Source="../data/AllProfitsDataPage.xaml"/>
         </Grid>
 
 

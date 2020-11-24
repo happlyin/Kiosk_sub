@@ -469,9 +469,11 @@ C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\Kiosk.Properties.Reso
 C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\Kiosk.csproj.GenerateResource.cache
 C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\Kiosk.csproj.CoreCompileInputs.cache
 C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\Kiosk.csproj.CopyComplete
-C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\StatsDataPage.g.cs
-C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\StatsDataPage.baml
-C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenusData.g.cs
-C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenusData.baml
-C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\Page1.g.cs
-C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\Page1.baml
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\AllProfitsDataPage.g.cs
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfitsPage.g.cs
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPae.g.cs
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\UserDataPage.g.cs
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\AllProfitsDataPage.baml
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfitsPage.baml
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPae.baml
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\UserDataPage.baml

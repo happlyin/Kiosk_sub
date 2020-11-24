@@ -135,20 +135,23 @@
     <Compile Include="auth\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="data\AllProfitsDataPage.xaml.cs">
+      <DependentUpon>AllProfitsDataPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="data\CategoryDataPage.xaml.cs">
       <DependentUpon>CategoryDataPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="data\MenusData.xaml.cs">
-      <DependentUpon>MenusData.xaml</DependentUpon>
+    <Compile Include="data\DayProfitsPage.xaml.cs">
+      <DependentUpon>DayProfitsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="data\Page1.xaml.cs">
-      <DependentUpon>Page1.xaml</DependentUpon>
+    <Compile Include="data\MenuDataPae.xaml.cs">
+      <DependentUpon>MenuDataPae.xaml</DependentUpon>
     </Compile>
     <Compile Include="data\SeatDataPage.xaml.cs">
       <DependentUpon>SeatDataPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="data\StatsDataPage.xaml.cs">
-      <DependentUpon>StatsDataPage.xaml</DependentUpon>
+    <Compile Include="data\UserDataPage.xaml.cs">
+      <DependentUpon>UserDataPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="model\Market.cs" />
     <Compile Include="model\Stats\AllProfitsData.cs" />
@@ -206,15 +209,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="data\AllProfitsDataPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="data\CategoryDataPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="data\MenusData.xaml">
+    <Page Include="data\DayProfitsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="data\Page1.xaml">
+    <Page Include="data\MenuDataPae.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -222,7 +229,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="data\StatsDataPage.xaml">
+    <Page Include="data\UserDataPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
