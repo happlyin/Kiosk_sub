@@ -34,7 +34,7 @@ namespace Kiosk.data
                 new RowSeries
                 {
                     Title = "판매 총 수량",
-                    Values = new ChartValues<double> (viewModel.GetSumCount())
+                    Values = new ChartValues<double> (viewModel.GetSumCount(0, 11))
                 }
             };
 
@@ -42,16 +42,22 @@ namespace Kiosk.data
             SeriesCollection.Add(new RowSeries
             {
                 Title = "판매 총 총액",
-                Values = new ChartValues<double>(viewModel.GetSumProfits())
+                Values = new ChartValues<double>(viewModel.GetSumProfits(0, 11))
             });
 
             //also adding values updates and animates the chart automatically
             SeriesCollection[1].Values.Add(48d);
 
-            Labels =  viewModel.GetNames();
+            Labels =  viewModel.GetNames(0, 11);
             Formatter = value => value.ToString("N");
 
             DataContext = this;
+        }
+
+        public void UpdateData(object sender, SelectionChangedEventArgs e)
+        {
+            int nowIndex = (xComboBox.SelectedIndex + 1) * 11;
+            
         }
 
         public SeriesCollection SeriesCollection { get; set; }

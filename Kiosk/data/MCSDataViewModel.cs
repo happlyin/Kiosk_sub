@@ -35,30 +35,30 @@ namespace Kiosk.data
 
         }
 
-        public double[] GetSumCount()
+        public double[] GetSumCount(int startPoint, int endPoint)
         {
             List<double> buffer = new List<double>();
-            for (int i = 0; i < data.Count; i++)
+            for (int i = startPoint; i < endPoint; i++)
             {
                 buffer.Add(Convert.ToDouble(data.ElementAt(i).count));
             }
             return buffer.ToArray();
         }
 
-        public double[] GetSumProfits()
+        public double[] GetSumProfits(int startPoint, int endPoint)
         {
             List<double> buffer = new List<double>();
-            for (int i = 0; i < data.Count; i++)
+            for (int i = startPoint; i < endPoint; i++)
             {
                 buffer.Add(Convert.ToDouble(data.ElementAt(i).sumProfits));
             }
             return buffer.ToArray();
         }
 
-        public string[] GetNames()
+        public string[] GetNames(int startPoint, int endPoint)
         {
             List<string> buffer = new List<string>();
-            for (int i = 0; i < data.Count; i++)
+            for (int i = startPoint; i < endPoint; i++)
             {
                 buffer.Add(data.ElementAt(i).name);
             }
