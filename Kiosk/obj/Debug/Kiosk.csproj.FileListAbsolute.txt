@@ -471,11 +471,9 @@ C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\Kiosk.csproj.CoreComp
 C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\Kiosk.csproj.CopyComplete
 C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\AllProfitsDataPage.g.cs
 C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfitsPage.g.cs
-C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPae.g.cs
 C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\UserDataPage.g.cs
 C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\AllProfitsDataPage.baml
 C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfitsPage.baml
-C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPae.baml
 C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\UserDataPage.baml
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\AllProfitsDataPage.g.cs
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\CategoryDataPage.g.cs
@@ -489,3 +487,5 @@ C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\SeatData
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\UserDataPage.baml
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPage.g.cs
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPage.baml
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPage.g.cs
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPage.baml
