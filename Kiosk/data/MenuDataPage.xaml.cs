@@ -18,16 +18,16 @@ using System.Windows.Shapes;
 namespace Kiosk.data
 {
     /// <summary>
-    /// CategoryDataPage.xaml에 대한 상호 작용 논리
+    /// MenuDataPae.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class CategoryDataPage : Page
+    public partial class MenuDataPae : Page
     {
         private MCSDataViewModel viewModel;
-        public CategoryDataPage()
+        public MenuDataPae()
         {
             InitializeComponent();
             viewModel = new MCSDataViewModel();
-            viewModel.SetData(2);
+            viewModel.SetData(1);
 
             SeriesCollection = new SeriesCollection
             {
@@ -48,7 +48,7 @@ namespace Kiosk.data
             //also adding values updates and animates the chart automatically
             SeriesCollection[1].Values.Add(48d);
 
-            Labels = viewModel.GetNames();
+            Labels =  viewModel.GetNames();
             Formatter = value => value.ToString("N");
 
             DataContext = this;

@@ -144,9 +144,10 @@
     <Compile Include="data\DayProfitsPage.xaml.cs">
       <DependentUpon>DayProfitsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="data\MenuDataPae.xaml.cs">
-      <DependentUpon>MenuDataPae.xaml</DependentUpon>
+    <Compile Include="data\MenuDataPage.xaml.cs">
+      <DependentUpon>MenuDataPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="data\MCSDataViewModel.cs" />
     <Compile Include="data\SeatDataPage.xaml.cs">
       <DependentUpon>SeatDataPage.xaml</DependentUpon>
     </Compile>
@@ -221,7 +222,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="data\MenuDataPae.xaml">
+    <Page Include="data\MenuDataPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

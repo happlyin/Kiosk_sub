@@ -26,8 +26,8 @@ namespace Kiosk.remote
                 int totalPrice = 0;
                 int totalCount = 0;
                 MenuCategoryData buffer = new MenuCategoryData();
-                MySqlDataReader reader = connection.GetDBData("select idxMenu, count, totalPrice, salePrice from orders"
-                    + "where idxMenu = " + i + " and eatTable >= " + sTableNumber + " and eatTable <= " + eTableNumber);
+                MySqlDataReader reader = connection.GetDBData("select idxMenu, count, totalPrice, salePrice, eatTable from orders"
+                    + " where idxMenu = " + i + " and eatTable >= " + sTableNumber + " and eatTable <= " + eTableNumber + ";");
                 while (reader.Read())
                 {
                     int count = Int32.Parse(reader["count"].ToString());
@@ -54,23 +54,23 @@ namespace Kiosk.remote
             string[] categoryName = { "햄버거", "드링크", "사이드 메뉴" };
             List<MenuCategoryData> categoryData = new List<MenuCategoryData>();
 
-            for (int i = 0, checking = 1; i < 3; i++)
+            for (int i = 1, checking = 1; i < 4; i++)
             {
                 int totalPrice = 0;
                 int totalCount = 0;
                 int Nchecking = 0;
                 MenuCategoryData buffer = new MenuCategoryData();
 
-                MySqlDataReader reader = connection.GetDBData("select category, idxMenu where category = "
+                MySqlDataReader reader = connection.GetDBData("select category, idxMenu from menu where category = "
                     + i + " order by idxMenu desc");
                 if (reader.Read())
                 {
                     Nchecking = Int32.Parse(reader["idxMenu"].ToString());
                 }
 
-                reader = connection.GetDBData("select idxMenu, count, totalPrice, salePrice from orders"
-                    + "where idxMenu >= " + checking + " and where idxMenu  <= " + Nchecking
-                    + " and eatTable >= " + sTableNumber + " and eatTable <= " + eTableNumber);
+                reader = connection.GetDBData("select idxMenu, count, totalPrice, salePrice, eatTable from orders "
+                    + " where idxMenu >= " + checking + " and idxMenu  <= " + Nchecking
+                    + " and eatTable >= " + sTableNumber + " and eatTable <= " + eTableNumber + ";");
                 checking = ++Nchecking;
 
                 while (reader.Read())
@@ -82,7 +82,7 @@ namespace Kiosk.remote
                 }
                 buffer.count = totalCount;
                 buffer.sumProfits = totalPrice;
-                buffer.name = categoryName[0];
+                buffer.name = categoryName[(i - 1)];
                 categoryData.Add(buffer);
             }
 
