@@ -23,6 +23,15 @@ namespace Kiosk.data
         public MenuDataPage_F()
         {
             InitializeComponent();
+            MenuChartFrame.NavigationService.Navigate(new Kiosk.data.MenuDataPage(0, 11));
+        }
+
+        public void UpdateData(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBox cb = (ComboBox)sender;
+            int nowIndex = (cb.SelectedIndex + 1) * 11;
+            if(MenuChartFrame != null)
+                MenuChartFrame.NavigationService.Navigate(new Kiosk.data.MenuDataPage(nowIndex - 11, nowIndex));
         }
     }
 }

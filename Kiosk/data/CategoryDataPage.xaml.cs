@@ -46,7 +46,6 @@ namespace Kiosk.data
             });
 
             //also adding values updates and animates the chart automatically
-            SeriesCollection[1].Values.Add(48d);
 
             Labels = viewModel.GetNames(0, 3);
             Formatter = value => value.ToString("N");

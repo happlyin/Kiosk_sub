@@ -20,10 +20,10 @@ namespace Kiosk.data
     /// <summary>
     /// MenuDataPae.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class MenuDataPae : Page
+    public partial class MenuDataPage : Page
     {
         private MCSDataViewModel viewModel;
-        public MenuDataPae()
+        public MenuDataPage(int startPoint, int endPoint)
         {
             InitializeComponent();
             viewModel = new MCSDataViewModel();
@@ -34,7 +34,7 @@ namespace Kiosk.data
                 new RowSeries
                 {
                     Title = "판매 총 수량",
-                    Values = new ChartValues<double> (viewModel.GetSumCount(0, 11))
+                    Values = new ChartValues<double> (viewModel.GetSumCount(startPoint, endPoint))
                 }
             };
 
@@ -42,22 +42,15 @@ namespace Kiosk.data
             SeriesCollection.Add(new RowSeries
             {
                 Title = "판매 총 총액",
-                Values = new ChartValues<double>(viewModel.GetSumProfits(0, 11))
+                Values = new ChartValues<double>(viewModel.GetSumProfits(startPoint, endPoint))
             });
 
             //also adding values updates and animates the chart automatically
-            SeriesCollection[1].Values.Add(48d);
 
-            Labels =  viewModel.GetNames(0, 11);
+            Labels =  viewModel.GetNames(startPoint, endPoint);
             Formatter = value => value.ToString("N");
 
             DataContext = this;
-        }
-
-        public void UpdateData(object sender, SelectionChangedEventArgs e)
-        {
-            int nowIndex = (xComboBox.SelectedIndex + 1) * 11;
-            
         }
 
         public SeriesCollection SeriesCollection { get; set; }

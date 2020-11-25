@@ -32,7 +32,7 @@ namespace Kiosk.admin
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            FrameLayout1.NavigationService.Navigate(new Kiosk.data.MenuDataPae());
+            FrameLayout1.NavigationService.Navigate(new data.MenuDataPage_F());
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
