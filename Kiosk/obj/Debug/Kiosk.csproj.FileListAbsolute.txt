@@ -489,3 +489,7 @@ C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuData
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPage.baml
 C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPage.g.cs
 C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPage.baml
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfitsPage_F.g.cs
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPage_F.g.cs
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfitsPage_F.baml
+C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPage_F.baml
