@@ -20,25 +20,40 @@ namespace Kiosk.data
     /// </summary>
     public partial class SeatDataPage : Page
     {
-        private int tableNum = 1;
+        private int beforeTableNum = 1;
         private bool ViewMode = true;
         private SolidColorBrush red = new SolidColorBrush(Colors.Red);
         private SolidColorBrush yellow = new SolidColorBrush(Colors.Yellow);
+        private SeatDataViewModel viewModel;
 
         public SeatDataPage(int tableNumber, bool mode)//mode = true : Menu, false : Category
         {
             InitializeComponent();
 
-            this.tableNum = tableNumber;
+            this.beforeTableNum = tableNumber;
             this.ViewMode = mode;
 
-            ChartFrame.NavigationService.Navigate(new Kiosk.data.MenuDataPage_F(tableNumber));
+            viewModel = new SeatDataViewModel();
+            xTable.ItemsSource = viewModel.tableDatas;
+
+            ChartFrame.NavigationService.Navigate(new Kiosk.data.MenuDataPage_F(beforeTableNum));
+            xMenu.Background = yellow;
         }
 
         private void Table_Click(object sender, SelectionChangedEventArgs e)
         {
             ListBox listBox = (ListBox)sender;
-            //TableData item = (TableData)listBox.SelectedItem;
+            model.TableData item = (model.TableData)listBox.SelectedItem;
+            if(item.myTableNumber != beforeTableNum)
+            {
+                viewModel.tableDatas.ElementAt(beforeTableNum - 1).TableColor = red;
+                beforeTableNum = item.myTableNumber;
+                viewModel.tableDatas.ElementAt(beforeTableNum - 1).TableColor = yellow;
+                if (this.ViewMode)
+                    ChartFrame.NavigationService.Navigate(new Kiosk.data.MenuDataPage_F(this.beforeTableNum));
+                else
+                    ChartFrame.NavigationService.Navigate(new Kiosk.data.CategoryDataPage(this.beforeTableNum));
+            }
             
         }
 
@@ -46,8 +61,10 @@ namespace Kiosk.data
         {
             if (this.ViewMode != true)
             {
-                ChartFrame.NavigationService.Navigate(new Kiosk.data.MenuDataPage_F(this.tableNum));
+                ChartFrame.NavigationService.Navigate(new Kiosk.data.MenuDataPage_F(this.beforeTableNum));
                 this.ViewMode = true;
+                xCategory.Background = red;
+                xMenu.Background = yellow;
             }
         }
 
@@ -55,8 +72,10 @@ namespace Kiosk.data
         {
             if (this.ViewMode != false)
             {
-                ChartFrame.NavigationService.Navigate(new Kiosk.data.CategoryDataPage(this.tableNum));
+                ChartFrame.NavigationService.Navigate(new Kiosk.data.CategoryDataPage(this.beforeTableNum));
                 this.ViewMode = false;
+                xMenu.Background = red;
+                xCategory.Background = yellow;
             }
         }
     }

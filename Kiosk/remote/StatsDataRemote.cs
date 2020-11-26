@@ -92,11 +92,7 @@ namespace Kiosk.remote
         public DayProfits GetDayData(DateTime checkDay)
         {
             DayProfits dayProfit = new DayProfits();
-            List<HourProfits> hourProfit = new List<HourProfits>();
-            for (int i = 0; i < 24; i++)
-            {
-                hourProfit.Add(new HourProfits());
-            }
+            int[] hourProfit = new int[24];
 
             MySqlDataReader reader = connection.GetDBData("select payTime, count, totalPrice, salePrice from orders");
 
@@ -110,11 +106,11 @@ namespace Kiosk.remote
                     int sumPrice = (Int32.Parse(reader["totalPrice"].ToString())
                         + Int32.Parse(reader["salePrice"].ToString()))
                         * Int32.Parse(reader["count"].ToString());
-                    hourProfit.ElementAt(Int32.Parse(readTime.Substring(11, 2))).sumHourProfits += sumPrice;
+                    hourProfit[(Int32.Parse(readTime.Substring(11, 2)))] += sumPrice;
                     dayProfit.sumProfits += sumPrice;
                 }
             }
-            dayProfit.hoursProfits = hourProfit;
+            dayProfit.hoursProfits = hourProfit.ToList();
             return dayProfit;
         }
 

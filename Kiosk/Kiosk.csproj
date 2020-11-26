@@ -157,13 +157,13 @@
     <Compile Include="data\SeatDataPage.xaml.cs">
       <DependentUpon>SeatDataPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="data\SeatDataViewModel.cs" />
     <Compile Include="data\UserDataPage.xaml.cs">
       <DependentUpon>UserDataPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="model\Market.cs" />
     <Compile Include="model\Stats\AllProfitsData.cs" />
     <Compile Include="model\Stats\DayProfits.cs" />
-    <Compile Include="model\Stats\HourProfits.cs" />
     <Compile Include="model\Stats\MenuCategoryData.cs" />
     <Compile Include="model\Stats\SeatData.cs" />
     <Compile Include="model\Stats\UserData.cs" />

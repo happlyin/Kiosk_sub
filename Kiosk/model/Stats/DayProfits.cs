@@ -10,7 +10,7 @@ namespace Kiosk.model.Stats
     class DayProfits : BindableBase
     {
         private int _sumProfits;
-        private List<HourProfits> _hoursProfits;
+        private List<int> _hoursProfits;
 
         public int sumProfits
         {
@@ -18,7 +18,7 @@ namespace Kiosk.model.Stats
             set { SetProperty(ref _sumProfits, value); }
         }
 
-        public List<HourProfits> hoursProfits
+        public List<int> hoursProfits
         {
             get { return _hoursProfits; }
             set { SetProperty(ref _hoursProfits, value); }
