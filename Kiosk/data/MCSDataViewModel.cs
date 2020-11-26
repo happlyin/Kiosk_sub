@@ -22,8 +22,6 @@ namespace Kiosk.data
             set => SetProperty(ref _data, value);
         }
 
-        private int viewMode;
-
         public void SetData(int modeNumber)
         {
             StatsDataRemote remote = new StatsDataRemote();
@@ -31,7 +29,15 @@ namespace Kiosk.data
                 this.data = remote.GetMenuData(0, 9);
             else
                 this.data = remote.GetCategoryData(0, 9);
-            this.viewMode = modeNumber;
+        }
+
+        public void SetData(int talbeNumber, bool mode) //true : Menu, false : Category
+        {
+            StatsDataRemote remote = new StatsDataRemote();
+            if (mode)
+                this.data = remote.GetMenuData(talbeNumber, talbeNumber);
+            else
+                this.data = remote.GetCategoryData(talbeNumber, talbeNumber);
 
         }
 
@@ -50,7 +56,7 @@ namespace Kiosk.data
             List<double> buffer = new List<double>();
             for (int i = startPoint; i < endPoint; i++)
             {
-                buffer.Add(Convert.ToDouble(data.ElementAt(i).sumProfits));
+                buffer.Add(Convert.ToDouble(data.ElementAt(i).sumProfits) / 10000.0);
             }
             return buffer.ToArray();
         }

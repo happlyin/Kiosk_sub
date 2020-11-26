@@ -23,11 +23,15 @@ namespace Kiosk.data
     public partial class CategoryDataPage : Page
     {
         private MCSDataViewModel viewModel;
-        public CategoryDataPage()
+
+        public CategoryDataPage(int tableNumber)
         {
             InitializeComponent();
             viewModel = new MCSDataViewModel();
-            viewModel.SetData(2);
+            if (tableNumber == 0)
+                viewModel.SetData(2);
+            else
+                viewModel.SetData(tableNumber, false);
 
             SeriesCollection = new SeriesCollection
             {
@@ -38,14 +42,12 @@ namespace Kiosk.data
                 }
             };
 
-            //adding series will update and animate the chart automatically
             SeriesCollection.Add(new RowSeries
             {
-                Title = "판매 총 총액",
+                Title = "판매 총 총액(0.01 = 100원)",
                 Values = new ChartValues<double>(viewModel.GetSumProfits(0, 3))
             });
 
-            //also adding values updates and animates the chart automatically
 
             Labels = viewModel.GetNames(0, 3);
             Formatter = value => value.ToString("N");

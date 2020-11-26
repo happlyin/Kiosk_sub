@@ -20,10 +20,12 @@ namespace Kiosk.data
     /// </summary>
     public partial class MenuDataPage_F : Page
     {
-        public MenuDataPage_F()
+        int seatChecker = 0;
+        public MenuDataPage_F(int seatChecker)
         {
             InitializeComponent();
-            MenuChartFrame.NavigationService.Navigate(new Kiosk.data.MenuDataPage(0, 11));
+            this.seatChecker = seatChecker;
+            MenuChartFrame.NavigationService.Navigate(new Kiosk.data.MenuDataPage(0, 11, seatChecker));
         }
 
         public void UpdateData(object sender, SelectionChangedEventArgs e)
@@ -31,7 +33,7 @@ namespace Kiosk.data
             ComboBox cb = (ComboBox)sender;
             int nowIndex = (cb.SelectedIndex + 1) * 11;
             if(MenuChartFrame != null)
-                MenuChartFrame.NavigationService.Navigate(new Kiosk.data.MenuDataPage(nowIndex - 11, nowIndex));
+                MenuChartFrame.NavigationService.Navigate(new Kiosk.data.MenuDataPage(nowIndex - 11, nowIndex, seatChecker));
         }
     }
 }

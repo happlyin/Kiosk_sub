@@ -32,17 +32,17 @@ namespace Kiosk.admin
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            FrameLayout1.NavigationService.Navigate(new data.MenuDataPage_F());
+            FrameLayout1.NavigationService.Navigate(new data.MenuDataPage_F(0));
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            FrameLayout1.NavigationService.Navigate(new Kiosk.data.CategoryDataPage());
+            FrameLayout1.NavigationService.Navigate(new Kiosk.data.CategoryDataPage(0));
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            FrameLayout1.NavigationService.Navigate(new Kiosk.data.SeatDataPage());
+            FrameLayout1.NavigationService.Navigate(new Kiosk.data.SeatDataPage(1, true));
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)

@@ -89,22 +89,6 @@ namespace Kiosk.remote
             return categoryData;
         }
 
-        public List<SeatData> GetSeatData()
-        {
-            List<SeatData> seatsData = new List<SeatData>();
-
-            for (int i = 0; i < 9; i++)
-            {
-                SeatData bufferSeatData = new SeatData();
-                bufferSeatData.menuData = GetMenuData((i + 1), (i + 1));
-                bufferSeatData.categoryData = GetCategoryData((i + 1), (i + 1));
-                bufferSeatData.tableNumber = i + 1;
-                seatsData.Add(bufferSeatData);
-            }
-
-            return seatsData;
-        }
-
         public DayProfits GetDayData(DateTime checkDay)
         {
             DayProfits dayProfit = new DayProfits();
