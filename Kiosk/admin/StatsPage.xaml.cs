@@ -47,7 +47,7 @@ namespace Kiosk.admin
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            FrameLayout1.NavigationService.Navigate(new Kiosk.data.DayProfitsPage());
+            FrameLayout1.NavigationService.Navigate(new Kiosk.data.DayProfitsPage_M());
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)

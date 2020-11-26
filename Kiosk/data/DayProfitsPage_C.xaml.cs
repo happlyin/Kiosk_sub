@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Kiosk.data
 {
     /// <summary>
-    /// DayProfitsPage.xaml에 대한 상호 작용 논리
+    /// DayProfitsPage_C.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class DayProfitsPage : Page
+    public partial class DayProfitsPage_C : Page
     {
-        public DayProfitsPage()
+        public DayProfitsPage_C()
         {
             InitializeComponent();
         }

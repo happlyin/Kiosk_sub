@@ -141,11 +141,14 @@
     <Compile Include="data\CategoryDataPage.xaml.cs">
       <DependentUpon>CategoryDataPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="data\DayProfitsPage.xaml.cs">
-      <DependentUpon>DayProfitsPage.xaml</DependentUpon>
+    <Compile Include="data\DayProfitsPage_C.xaml.cs">
+      <DependentUpon>DayProfitsPage_C.xaml</DependentUpon>
     </Compile>
     <Compile Include="data\DayProfitsPage_F.xaml.cs">
       <DependentUpon>DayProfitsPage_F.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="data\DayProfitsPage_M.xaml.cs">
+      <DependentUpon>DayProfitsPage_M.xaml</DependentUpon>
     </Compile>
     <Compile Include="data\MenuDataPage.xaml.cs">
       <DependentUpon>MenuDataPage.xaml</DependentUpon>
@@ -224,11 +227,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="data\DayProfitsPage.xaml">
+    <Page Include="data\DayProfitsPage_C.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="data\DayProfitsPage_F.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="data\DayProfitsPage_M.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -477,12 +477,10 @@ C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfitsPage.b
 C:\Users\Domong\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\UserDataPage.baml
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\AllProfitsDataPage.g.cs
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\CategoryDataPage.g.cs
-C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfitsPage.g.cs
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\SeatDataPage.g.cs
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\UserDataPage.g.cs
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\AllProfitsDataPage.baml
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\CategoryDataPage.baml
-C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfitsPage.baml
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\SeatDataPage.baml
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\UserDataPage.baml
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPage.g.cs
@@ -497,3 +495,7 @@ C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfi
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPage_F.g.cs
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfitsPage_F.baml
 C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\MenuDataPage_F.baml
+C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfitsPage_C.g.cs
+C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfitsPage_M.g.cs
+C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfitsPage_C.baml
+C:\Users\happl\OneDrive\Documents\GitHub\Kiosk_sub\Kiosk\obj\Debug\data\DayProfitsPage_M.baml
